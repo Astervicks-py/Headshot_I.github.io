@@ -100,7 +100,7 @@ homePage.style.display="none"
         enemy.style.left = randleft +"px";
         enemy.style.top=randtop + "px";
 
-    },1500);
+    },1100);
     
 const checkGame=setInterval(()=>{
     if(timer<=0) {
