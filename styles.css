@@ -22,7 +22,7 @@ body{
 #cortana{
     width:100%;
     height:100vh;
-    /*max-height:680px;*/
+    max-height:680px;
     background:black;
     margin:auto;
     /*margin-top:4%;*/
