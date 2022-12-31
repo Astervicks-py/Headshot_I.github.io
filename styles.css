@@ -135,8 +135,9 @@ body{
 }
 .gameScreen{
     width:100%;
+    height:60%;
     position: relative;
-    height:400px ;
+    max-height:400px ;
     background:url(wall.png);
     margin:auto;
     top:22%;
