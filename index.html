@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CORTANA</title>
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+          <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4fe059a60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="cortana">      
+        <h2 id="name">Cortana</h2>
+        <div id="direction">
+            <button type="button" onclick="moveUp()" class="up"><i class="fa-solid fa-chevron-right"></i></button>
+            <button type="button" onclick="moveDown()" class="down"><i class="fa-solid fa-chevron-left"></i></button>
+            <button type="button" onclick="moveLeft()" class="left"><i class="fa-sharp fa-solid fa-chevron-up"></i></button>
+            <button type="button" onclick="moveRight()"class="right"><i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        
+        <!-- First page containing user info -->
+        <div class="opening-presentation">
+                <div class="pages" id="page1">
+                    <h1 style="font-size:1rem"> Cortana<br> Group Of Companies [CGC]</h1>
+                </div>
+                <div class="pages" id="page2">
+                    <img style="width:100%" src="logo.jpg" alt="">
+                </div>
+                <div class="pages" id="page3">
+                    <img src="ceo.jpg">
+                   <h1 style="position:absolute;width:100%;font-size:1.1rem;font-family:arial;top:85%;background:#000;padding:3px">CEO of Cortana Group of Companies<br><em>Astervicks.js</em></h1> 
+                </div>
+                <div class="pages" id="page4">
+                    <h1>Presents</h1>
+                </div>
+        </div>
+            
+    <div id="userInfo">
+        <h1>HeadShot</h1>
+        <div class="img">
+            <img src="IMG-0_1.jpg">
+        </div>
+        <button id="submit" class="btn" ><i class="fa-solid fa-play"></i></button>
+    </div>
+    
+    
+    
+        <div id="loss">
+				        <h2>Game Over</h2>
+				        <i><h3>Score:<span id="gameScore">0</span></h3></i>
+				        <button type="submit" class="btn"><i class="fa-solid fa-play"></i></button>
+				 </div>
+				 
+				 
+				
+        <div class="gameScreen">
+           <div class="scoreBoard">
+               <h1><i>Score </i>:<span id="dispScore">0</span></h1>
+               <h1><i>Time </i>:<span id="dispTime">30</span></h1>
+               
+           </div> 
+        
+        </div>
+        <audio id="mySong" src="background.mp3" type="audio/mp3" loop></audio> 
+        <button id="on" class="on"><i class="fa-solid fa-power-off"></i></button>
+        <div class="power">
+            <button onclick="playGame()" id="pause" style="padding:5px; border-radius:10px;font-family: 'Henny Penny', cursive,arial;">Play</button>
+        </div>
+        
+        <div id="action">
+           
+            
+          <!--  <button type="button" class="triangle"><i class="fa-solid fa-play"></i></button>
+            <button type="button" class="circle"><i class="fa-regular fa-circle"></i></button> -->
+            
+            
+            <button type="button" id="x" class="x"><img src="bullet.png" alt="kill" style="transform:rotate(280deg); outline:none;text-align:center"></button>
+            
+            
+         <!-- <button type="button" class="square"><i class="fa-solid fa-square"></i></button> -->
+        </div>
+            
+    </div>
+</body>
+<script src="script.js"></script>
+</html>    
